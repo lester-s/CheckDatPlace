@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+        android:title="Filter"
+        android:id="@+id/popFilterButton"
+        android:icon="@drawable/filterButton_states"
+        android:showAsAction="collapseActionView|ifRoom" />
+  <item android:id="@+id/search"
+        android:title="@string/SearchTitle"
+        android:icon="@drawable/ic_action_search"
+        android:showAsAction="collapseActionView|ifRoom"
+        android:actionViewClass="android.widget.SearchView" />
+    <item
+         android:id="@+id/menu_ShowAll"
+         android:showAsAction="ifRoom"
+         android:icon="@drawable/showAllButton_states"
+         android:title="Show all" />
+</menu>

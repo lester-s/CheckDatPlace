@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/SearchResultList" />
+    </LinearLayout>
+    <Button
+        android:background="@drawable/CircleButton"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:id="@+id/addPlaceButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:elevation="6dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp" />
+</RelativeLayout>

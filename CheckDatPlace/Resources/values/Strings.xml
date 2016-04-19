@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="Hello">Hello World, Click Me!</string>
+  <string name="ApplicationName">CheckDatPlace</string>
+  <string name="SearchLabel">CheckDatPlace</string>
+  <string name="SearchHint">Place</string>
+  <string name="SearchTitle">search place</string>
+  <string-array name="filterPlace">
+    <item>Name</item>
+    <item>Address</item>
+    <item>Grade</item>
+    <item>Comment</item>
+    <item>Category</item>
+  </string-array>
+</resources>

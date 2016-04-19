@@ -1,0 +1,1 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"><item><shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android"><solid android:color="@color/primary_dark" /></shape></item><item android:drawable="@drawable/ic_action_add_black" android:bottom="20dp" android:left="20dp" android:right="20dp" android:top="20dp" /></layer-list>

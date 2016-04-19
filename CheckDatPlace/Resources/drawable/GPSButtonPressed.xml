@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+      <stroke
+            android:width="0dp"
+            android:color="@color/white" />
+    </shape>
+  </item>
+  <item
+      android:drawable="@drawable/ic_action_location_2_black"
+      android:bottom="12dp"
+      android:left="12dp"
+      android:right="12dp"
+      android:top="12dp" />
+</layer-list>

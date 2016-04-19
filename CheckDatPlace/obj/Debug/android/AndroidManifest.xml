@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="checkdatplace.checkdatplace" android:versionName="1.0" android:installLocation="auto" android:versionCode="2">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="22" />
+  <!-- Google Maps for Android v2 requires OpenGL ES v2 -->
+  <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+  <!-- We need to be able to download map tiles and access Google Play Services-->
+  <uses-permission android:name="android.permission.INTERNET" />
+  <!-- Allow the application to access Google web-based services. -->
+  <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+  <!-- Google Maps for Android v2 will cache map tiles on external storage -->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <!-- Google Maps for Android v2 needs this permission so that it may check the connection state as it must download data -->
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <!-- Permission to receive remote notifications from Google Play Services -->
+  <!-- Notice here that we have the package name of our application as a prefix on the permissions. -->
+  <uses-permission android:name="checkdatplace.checkdatplace.permission.MAPS_RECEIVE" />
+  <permission android:name="checkdatplace.checkdatplace.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
+  <!-- These are optional, but recommended. They will allow Maps to use the My Location provider. -->
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:allowBackup="true" android:label="@string/ApplicationName" android:theme="@style/CDPTheme" android:icon="@drawable/cdpicon" android:name="mono.android.app.Application" android:debuggable="true">
+    <!-- Put your Google Maps V2 API Key here. -->
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDGoy8rs0tJ0VN27gsHFqjPDkT0Spn1B-k" />
+    <meta-data android:name="com.google.android.gms.version" android:value="27.0.0.0" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <activity android:label="Create" android:name="md56b1fd57ae576ac1578d7eda36e880683.CreatePlaceActivity" />
+    <activity android:icon="@drawable/cdpicon" android:label="Check Dat Place" android:name="md56b1fd57ae576ac1578d7eda36e880683.MainActivity" />
+    <activity android:label="Map" android:name="md56b1fd57ae576ac1578d7eda36e880683.MapViewActivity" />
+    <activity android:label="CDP" android:name="md56b1fd57ae576ac1578d7eda36e880683.SearchPlaceActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="Gallery" android:name="md557551cde0cc2908a85ae3a0792419d41.ImageViewerActivity" />
+    <activity android:name="md50575d4ab16fc336ade1879255cf984b5.MediaPickerActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="checkdatplace.checkdatplace.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.checkdatplace.checkdatplace" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

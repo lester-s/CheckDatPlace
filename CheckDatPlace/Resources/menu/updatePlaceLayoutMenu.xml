@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+       android:id="@+id/menu_Share"
+       android:showAsAction="ifRoom"
+       android:icon="@drawable/showAllButton_states"
+       android:title="Share" />
+  <item
+       android:id="@+id/menu_ShowMap"
+       android:showAsAction="ifRoom"
+       android:icon="@drawable/showAllButton_states"
+       android:title="Show all" />
+  <item
+       android:id="@+id/menu_camera"
+       android:showAsAction="ifRoom"
+       android:icon="@drawable/cameraButtonState"
+       android:title="camera" />
+  <item
+       android:id="@+id/menu_deletePlace"
+       android:showAsAction="ifRoom"
+       android:icon="@drawable/DeletePlaceButton_states"
+       android:title="camera" />
+</menu>
